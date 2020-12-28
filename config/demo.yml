@@ -8,11 +8,12 @@
 # Demo 1: Generating different types of data from the LiDAR scan
 Demo1:
   # the folder of raw LiDAR scans
-  scan_folder: "data/scans"
+  scan_folder: "/datasets/kitti/sequences/00/velodyne"
   # the folder of raw semantic predictions
-  semantic_folder: "data/semantic_probs"
+  semantic_folder: "/datasets/kitti/sequences/00/semantic_probs"
   # the folder to store the generated data
-  dst_folder: "data/preprocess_data_demo"
+  dst_folder: "/datasets/kitti/sequences/00/preprocess_data"
+  features_folder: "/datasets/kitti/sequences/00/features"
 
 
 # Demo 2: Inferring overlap and relative yaw angle between two LiDAR scans
@@ -20,8 +21,8 @@ Demo2:
   # path of Network configuration file
   network_config: "config/network.yml"
   # sepecify paths of two scans
-  scan1_path: "data/scans/000000.bin"
-  scan2_path: "data/scans/000001.bin"
+  scan1_path: "/datasets/kitti/sequences/00/velodyne/000000.bin"
+  scan2_path: "/datasets/kitti/sequences/00/velodyne/000001.bin"
   # seq label for inferring
   infer_seqs: "preprocess_data_demo"
 
